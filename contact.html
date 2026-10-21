@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact - Make ta Marque</title>
+
+    <meta name="description"
+        content="Contactez Make ta Marque pour discuter de votre projet de design graphique, création Web ou contenu pour les réseaux sociaux.">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+<!-- HEADER -->
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-principale">
+
+            <div class="container">
+
+                <a class="navbar-brand" href="index.html">
+
+                    <img src="images/maketamarque-logo.png"
+                        alt="Make ta Marque"
+                        class="logo">
+
+                </a>
+
+                <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu"
+                    aria-controls="menu"
+                    aria-expanded="false"
+                    aria-label="Ouvrir le menu">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="menu">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                Accueil
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">
+                                Services
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="creations.html">
+                                Créations
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="forfaits.html">
+                                Forfaits
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="apropos.html">
+                                À propos
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                                aria-current="page"
+                                href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Contact -->
+
+        <section class="entete-page">
+
+            <div class="container text-center">
+
+                <h1 class="titre-page">
+                    <span class="titre-contour">CONTACTEZ-</span>
+                    <span class="titre-plein">NOUS.</span>
+                </h1>
+
+                <p>
+                    Une idée, une question ou un projet en tête ?
+                    On est là pour en discuter.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Formulaire de contact -->
+
+        <section class="contact-page">
+            <div class="container">
+                <div class="contact-contenu mx-auto">
+                        <form class="formulaire-contact"
+                            id="formulaire-contact"
+                            action="merci.html"
+                            method="get"
+                            novalidate>
+
+                            <p class="intro-formulaire">
+                                Les champs marqués d'un * sont obligatoires.
+                            </p>
+
+                            <fieldset class="type-demande mb-4">
+                                <legend class="form-label">Type de demande *</legend>
+                                <div class="d-flex flex-wrap gap-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="type-demande"
+                                            id="type-question" value="question" checked>
+                                        <label class="form-check-label" for="type-question">J'ai une question</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="type-demande"
+                                            id="type-projet" value="projet">
+                                        <label class="form-check-label" for="type-projet">J'ai un projet</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <div class="row g-4">
+
+                                <!-- Nom -->
+
+                                <div class="col-12 col-md-6">
+
+                                    <label for="nom" class="form-label">
+                                        Nom *
+                                    </label>
+
+                                    <input type="text"
+                                        class="form-control"
+                                        id="nom"
+                                        name="nom"
+                                        placeholder="Entrez votre nom"
+                                        required
+                                        minlength="2">
+
+                                </div>
+
+                                <!-- Courriel -->
+
+                                <div class="col-12 col-md-6">
+
+                                    <label for="courriel" class="form-label">
+                                        Courriel *
+                                    </label>
+
+                                    <input type="email"
+                                        class="form-control"
+                                        id="courriel"
+                                        name="courriel"
+                                        placeholder="Entrez votre courriel"
+                                        required>
+
+                                </div>
+
+                                <!-- Raison de la demande -->
+
+                                <div class="col-12 champ-projet d-none">
+
+                                    <label for="raison" class="form-label">
+                                        Raison de la demande *
+                                    </label>
+
+                                    <select class="form-select"
+                                        id="raison"
+                                        name="raison"
+                                        required>
+
+                                        <option value="" selected disabled>
+                                            Sélectionnez une option
+                                        </option>
+
+                                        <option value="generale">
+                                            Demande générale
+                                        </option>
+
+                                        <option value="identite">
+                                            Identité de marque
+                                        </option>
+
+                                        <option value="design">
+                                            Design graphique
+                                        </option>
+
+                                        <option value="web">
+                                            Création Web
+                                        </option>
+
+                                        <option value="reseaux">
+                                            Réseaux sociaux
+                                        </option>
+
+                                        <option value="numerique">
+                                            Design numérique et courriel
+                                        </option>
+
+                                        <option value="autre">
+                                            Autre
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                                <div class="col-12 champ-projet d-none" id="section-reseaux">
+
+                                    <fieldset class="choix-reseaux">
+
+                                        <legend>
+                                            Réseaux sociaux concernés
+                                        </legend>
+
+                                        <p>
+                                            Sélectionnez une ou plusieurs plateformes.
+                                        </p>
+
+
+                                        <div class="row">
+
+                                            <div class="col-6 col-md-4">
+
+                                                <div class="form-check">
+
+                                                    <input class="form-check-input"
+                                                        type="checkbox"
+                                                        id="instagram"
+                                                        name="reseaux"
+                                                        value="instagram">
+
+                                                    <label class="form-check-label"
+                                                        for="instagram">
+                                                        Instagram
+                                                    </label>
+
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="col-6 col-md-4">
+
+                                                <div class="form-check">
+
+                                                    <input class="form-check-input"
+                                                        type="checkbox"
+                                                        id="facebook"
+                                                        name="reseaux"
+                                                        value="facebook">
+
+                                                    <label class="form-check-label"
+                                                        for="facebook">
+                                                        Facebook
+                                                    </label>
+
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="col-6 col-md-4">
+
+                                                <div class="form-check">
+
+                                                    <input class="form-check-input"
+                                                        type="checkbox"
+                                                        id="tiktok"
+                                                        name="reseaux"
+                                                        value="tiktok">
+
+                                                    <label class="form-check-label"
+                                                        for="tiktok">
+                                                        TikTok
+                                                    </label>
+
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="col-6 col-md-4">
+
+                                                <div class="form-check">
+
+                                                    <input class="form-check-input"
+                                                        type="checkbox"
+                                                        id="linkedin"
+                                                        name="reseaux"
+                                                        value="linkedin">
+
+                                                    <label class="form-check-label"
+                                                        for="linkedin">
+                                                        LinkedIn
+                                                    </label>
+
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="col-6 col-md-4">
+
+                                                <div class="form-check">
+
+                                                    <input class="form-check-input"
+                                                        type="checkbox"
+                                                        id="youtube"
+                                                        name="reseaux"
+                                                        value="youtube">
+
+                                                    <label class="form-check-label"
+                                                        for="youtube">
+                                                        YouTube
+                                                    </label>
+
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="col-6 col-md-4">
+
+                                                <div class="form-check">
+
+                                                    <input class="form-check-input"
+                                                        type="checkbox"
+                                                        id="pinterest"
+                                                        name="reseaux"
+                                                        value="pinterest">
+
+                                                    <label class="form-check-label"
+                                                        for="pinterest">
+                                                        Pinterest
+                                                    </label>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </fieldset>
+
+                                </div>
+
+                                <!-- Budget -->
+
+                                <div class="col-12 col-md-6 d-none">
+
+                                    <label for="budget" class="form-label">
+                                        Budget approximatif
+                                    </label>
+
+                                    <select class="form-select"
+                                        id="budget"
+                                        name="budget">
+
+                                        <option value="">
+                                            Sélectionnez une option
+                                        </option>
+
+                                        <option value="moins-500">
+                                            Moins de 500 $
+                                        </option>
+
+                                        <option value="500-1000">
+                                            500 $ à 1 000 $
+                                        </option>
+
+                                        <option value="1000-2500">
+                                            1 000 $ à 2 500 $
+                                        </option>
+
+                                        <option value="2500-5000">
+                                            2 500 $ à 5 000 $
+                                        </option>
+
+                                        <option value="5000-plus">
+                                            5 000 $ et plus
+                                        </option>
+
+                                        <option value="a-discuter">
+                                            À discuter
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                                <!-- Méthode de contact -->
+
+                                <div class="col-12 col-md-6">
+
+                                    <fieldset class="methode-contact">
+
+                                        <legend>
+                                            Méthode de contact préférée
+                                        </legend>
+
+
+                                        <div class="form-check">
+
+                                            <input class="form-check-input"
+                                                type="radio"
+                                                name="methode"
+                                                id="methode-courriel"
+                                                value="courriel" checked>
+
+                                            <label class="form-check-label"
+                                                for="methode-courriel">
+                                                Courriel
+                                            </label>
+
+                                        </div>
+
+
+                                        <div class="form-check">
+
+                                            <input class="form-check-input"
+                                                type="radio"
+                                                name="methode"
+                                                id="methode-telephone"
+                                                value="telephone">
+
+                                            <label class="form-check-label"
+                                                for="methode-telephone">
+                                                Téléphone
+                                            </label>
+
+                                        </div>
+
+                                    </fieldset>
+
+                                </div>
+
+                                <div class="col-12 d-none" id="section-telephone">
+
+                                    <label for="telephone" class="form-label">
+                                        Téléphone
+                                    </label>
+
+                                    <input type="tel"
+                                        class="form-control"
+                                        id="telephone"
+                                        name="telephone"
+                                        placeholder="Entrez votre numéro de téléphone">
+
+                                </div>
+
+                                <!-- Message -->
+
+                                <div class="col-12">
+
+                                    <label for="message" class="form-label" id="label-message">
+                                        Votre question *
+                                    </label>
+
+                                    <textarea class="form-control"
+                                        id="message"
+                                        name="message"
+                                        rows="9"
+                                        required
+                                        placeholder="Entrez votre message"></textarea>
+
+                                </div>
+
+
+                                <!-- Envoyer -->
+
+                                <div class="col-12">
+
+                                    <button type="submit"
+                                        class="btn btn-principal">
+                                        Envoyer ma demande
+                                    </button>
+
+                                </div>
+
+
+                            </div>
+                            <p id="confirmation-contact" class="mt-3 d-none" role="status"></p>
+
+                        </form>
+
+                            <!-- Historique des demandes - Lab 3 -->
+
+                            <div class="historique-demandes mt-3">
+
+                                <a class="small text-muted"
+                                    data-bs-toggle="collapse"
+                                    href="#historique"
+                                    role="button"
+                                    aria-expanded="false"
+                                    aria-controls="historique">
+                                    Consulter l'historique des demandes
+                                </a>
+
+                                <div class="collapse mt-3" id="historique">
+
+                                    <div id="liste-demandes"></div>
+
+                                    <button type="button"
+                                        id="effacer-demandes"
+                                        class="btn btn-outline-secondary btn-sm mt-2">
+                                        Effacer l'historique
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                            <div class="text-center mt-4">
+
+                                <h3>Consultation initiale gratuite</h3>
+                                <p>
+                                    Un premier échange pour discuter de vos besoins
+                                    et de vos questions, sans engagement.
+                                </p>
+                            </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="pied-de-page">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <!-- Make ta Marque -->
+
+                <div class="col-12 col-md-4">
+
+                    <a href="index.html" class="logo-footer">
+                        <img src="images/maketamarque-logo-white.png" alt="Make ta Marque">
+                    </a>
+
+                    <p>
+                        Design graphique, création Web et contenu
+                        pour les réseaux sociaux.
+                    </p>
+
+                </div>
+
+                <!-- Liens utiles -->
+
+                <div class="col-6 col-md-4">
+
+                    <h2 class="titre-footer">Liens utiles</h2>
+
+                    <ul class="liens-footer">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="creations.html">Créations</a></li>
+                        <li><a href="forfaits.html">Forfaits</a></li>
+                        <li><a href="apropos.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                </div>
+
+                <!-- Réseaux sociaux -->
+
+                <div class="col-6 col-md-4">
+
+                    <h2 class="titre-footer">Suivez-nous</h2>
+
+                <div class="reseaux-sociaux">
+                    <a href="https://www.instagram.com/maketamarque" target="_blank" rel="noopener noreferrer">
+                        <img src="images/icons/instagram.svg" alt="">
+                        Instagram
+                    </a>
+
+                    <a href="https://www.facebook.com/maketamarque" target="_blank" rel="noopener noreferrer">
+                        <img src="images/icons/facebook.svg" alt="">
+                        Facebook
+                    </a>
+                </div>
+
+                </div>
+
+            </div>
+
+            <div class="copyright">
+            <p>© 2026 Make ta Marque</p>
+            <button type="button" id="bouton-theme" aria-label="Activer le mode sombre">
+                Thème ☾
+            </button>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/contact.js" defer></script>
+
+</body>
+
+</html>

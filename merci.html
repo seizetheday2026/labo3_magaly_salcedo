@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Merci - Make ta Marque</title>
+
+    <meta name="description"
+        content="Merci d'avoir rempli le formulaire de Make ta Marque.">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-principale">
+
+            <div class="container">
+
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/maketamarque-logo.png" alt="Make ta Marque">
+                </a>
+
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu"
+                    aria-controls="menu"
+                    aria-expanded="false"
+                    aria-label="Ouvrir le menu">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="menu">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Accueil</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="creations.html">Créations</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="forfaits.html">Forfaits</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="apropos.html">À propos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- Confirmation -->
+
+        <section class="merci-page">
+
+            <div class="container">
+
+                <div class="confirmation-merci">
+
+                    <p class="petit-titre-merci">Succès!</p>
+
+                    <h1>Votre formulaire a bien été rempli.</h1>
+
+                    <p>
+                    Merci de nous avoir contactés ! 
+                    Votre demande a bien été reçue. Nous vous répondrons dans les plus brefs délais.
+                    </p>
+
+                    <div id="recapitulatif-demande" class="my-4"></div>
+
+                    <a href="index.html" class="btn btn-principal">
+                        Retour à l'accueil
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="pied-de-page">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <!-- Make ta Marque -->
+
+                <div class="col-12 col-md-4">
+
+                    <a href="index.html" class="logo-footer">
+                        <img src="images/maketamarque-logo-white.png" alt="Make ta Marque">
+                    </a>
+
+                    <p>
+                        Design graphique, création Web et contenu
+                        pour les réseaux sociaux.
+                    </p>
+
+                </div>
+
+                <!-- Liens utiles -->
+
+                <div class="col-6 col-md-4">
+
+                    <h2 class="titre-footer">Liens utiles</h2>
+
+                    <ul class="liens-footer">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="creations.html">Créations</a></li>
+                        <li><a href="forfaits.html">Forfaits</a></li>
+                        <li><a href="apropos.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                </div>
+
+                <!-- Réseaux sociaux -->
+
+                <div class="col-6 col-md-4">
+
+                    <h2 class="titre-footer">Suivez-nous</h2>
+
+                    <div class="reseaux-sociaux">
+                        <a href="https://www.instagram.com/maketamarque" target="_blank" rel="noopener noreferrer">
+                            <img src="images/icons/instagram.svg" alt="">
+                            Instagram
+                        </a>
+
+                        <a href="https://www.facebook.com/maketamarque" target="_blank" rel="noopener noreferrer">
+                            <img src="images/icons/facebook.svg" alt="">
+                            Facebook
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                <p>© 2026 Make ta Marque</p>
+                <button type="button" id="bouton-theme" aria-label="Activer le mode sombre">
+                    Thème ☾
+                </button>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/merci.js" defer></script>
+
+</body>
+
+</html>
